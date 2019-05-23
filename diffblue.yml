@@ -60,8 +60,6 @@ phases:
       cover-function-only: false
       # instrument the file as opposed to the function only
       cover-only: file
-      # Limit input factory recursive depth (default 0 = no recursion allowed)
-      java-test-input-factory-bmc-recursion-limit: 4
   -
     #Phase 2 Simple and Private Directly
     timeout: 180
