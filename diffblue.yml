@@ -151,4 +151,156 @@ phases:
       # Make implicit runtime exceptions explicit.
       throw-runtime-exceptions: false
       # Set an upper bound on loop unwinding.
-      unwind: 6
+      unwind: 6units:
+# Target TGF: 139.0
+#  >methods=15
+#  >complexity=287
+#  >construction=3.25
+#  >dependency=2.0
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/web/CreateUserProfile.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/web/CreateUserProfile.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/PhoneNumber.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/PhoneNumber.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/Role.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/Role.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/UserProfile.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/UserProfile.java
+# Target TGF: 154.214285714
+#  >methods=15
+#  >complexity=301
+#  >construction=4.28571428571
+#  >dependency=2.0
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/web/TransactionView.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/web/TransactionView.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/DateFormatting.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/DateFormatting.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/ScaledDecimals.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/ScaledDecimals.java
+# Target TGF: 149.5
+#  >methods=11
+#  >complexity=299
+#  >construction=3.0
+#  >dependency=1.5
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/UserProfile.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/UserProfile.java
+# Target TGF: 213.214285714
+#  >methods=17
+#  >complexity=381
+#  >construction=4.53571428571
+#  >dependency=3.5
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/jpa/UserProfileDto.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/jpa/UserProfileDto.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/PhoneNumber.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/PhoneNumber.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/Role.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/Role.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/UserProfile.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/UserProfile.java
+# Target TGF: 114.0
+#  >methods=5
+#  >complexity=30
+#  >construction=27.0
+#  >dependency=1.33333333333
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/ScaledDecimals.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/ScaledDecimals.java
+# Target TGF: 127.5
+#  >methods=14
+#  >complexity=235
+#  >construction=5.25
+#  >dependency=2.0
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/web/TransactionDto.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/web/TransactionDto.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/DateFormatting.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/DateFormatting.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/ScaledDecimals.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/ScaledDecimals.java
+# Target TGF: 110.928571429
+#  >methods=14
+#  >complexity=206
+#  >construction=4.53571428571
+#  >dependency=3.5
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/jpa/GoalDto.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/jpa/GoalDto.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/Goal.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/Goal.java
+# Target TGF: 144.0
+#  >methods=5
+#  >complexity=32
+#  >construction=27.0
+#  >dependency=1.5
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/DateFormatting.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/DateFormatting.java
+# Target TGF: 109.5
+#  >methods=11
+#  >complexity=219
+#  >construction=3.0
+#  >dependency=1.5
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/sms/TwilioIncomingRequest.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/sms/TwilioIncomingRequest.java
+# Target TGF: 177.071428571
+#  >methods=11
+#  >complexity=367
+#  >construction=4.28571428571
+#  >dependency=1.75
+ - target:
+   - dir: target/classes
+     file: com/learnwithted/kidbank/adapter/web/UserProfileView.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/adapter/web/UserProfileView.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/Role.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/Role.java
+   - dir: target/classes
+     file: com/learnwithted/kidbank/domain/UserProfile.class
+     sourceDir: src/main/java
+     sourceFile: com/learnwithted/kidbank/domain/UserProfile.java
