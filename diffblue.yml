@@ -5,7 +5,7 @@ cbmcArguments:
   java-max-vla-length: 100000
 phases:
   -
-    #Phase 0 PRETTY, SIMPLE and SMART - Pretty Tests, Do Not Test Private Method Directly, Smart Harness
+    #Phase 0 PRETTY, SIMPLE and SMART - pretty tests, do not yest private methods directly, Smart-Harness
     timeout: 180
     cbmcArguments:
       # Use simple models first containers (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -33,7 +33,7 @@ phases:
       # Instatiate classes using the simplest contructor stratergy 
       smart-harness: simplest-constructor-and-nondet
   -
-    #Phase 1 PRETTY AND COMPLEX - Standard models, pretty tests, Do Not Test Private Method Directly, Input Factory
+    #Phase 1 PRETTY AND COMPLEX - standard models only, pretty tests, do not test private methods directly, input factory
     timeout: 180
     cbmcArguments:
       # Use the standard models library
@@ -63,7 +63,7 @@ phases:
       # Limit input factory recursive depth (default 0 = no recursion allowed)
       java-test-input-factory-bmc-recursion-limit: 4
   -
-    #Phase 2 FIFO Strategy - pretty tests, Do Not Test Private Method Directly , fifo
+    #Phase 2 FIFO Strategy - pretty tests, do not test private methods directly ,fifo
     timeout: 100
     cbmcArguments:
       # Use the standard models library
@@ -91,7 +91,7 @@ phases:
       # instrument the file as opposed to the function only
       cover-only: file
   -
-    #Phase 3 Exceptions, Do Not Test Private Method Directly
+    #Phase 3 - exceptions, do not test private methods directly
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -115,7 +115,7 @@ phases:
       # instrument the file as opposed to the function only
       cover-only: file
   -
-    #Phase 4 Simple and Private Directly - Reflection
+    #Phase 4 - test private methods directly, increase reflection
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -141,7 +141,7 @@ phases:
       # If the function is not analysable then do not pass onto the next phase
       not_analyzed: null
   -
-    #PHASE 5 - Aggressive mocking - Do Not Test Private Method Directly  
+    #PHASE 5 - aggressive mocking, do not test private methods directly
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
