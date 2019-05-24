@@ -5,7 +5,7 @@ cbmcArguments:
   java-max-vla-length: 100000
 phases:
   -
-  #Phase 0 PRETTY, SIMPLE and SMART - Pretty Tests, Do Not Test Private Method Directly, Smart Harness
+    #Phase 0 PRETTY, SIMPLE and SMART - Pretty Tests, Do Not Test Private Method Directly, Smart Harness
     timeout: 180
     cbmcArguments:
       # Use simple models first containers (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -33,7 +33,7 @@ phases:
       # Instatiate classes using the simplest contructor stratergy 
       smart-harness: simplest-constructor-and-nondet
   -
-  #Phase 1 PRETTY AND COMPLEX - Standard models, pretty tests, Do Not Test Private Method Directly, Input Factory
+    #Phase 1 PRETTY AND COMPLEX - Standard models, pretty tests, Do Not Test Private Method Directly, Input Factory
     timeout: 180
     cbmcArguments:
       # Use the standard models library
@@ -62,8 +62,8 @@ phases:
       cover-only: file
       # Limit input factory recursive depth (default 0 = no recursion allowed)
       java-test-input-factory-bmc-recursion-limit: 4
-  - 
-  #Phase 2 FIFO Strategy - pretty tests, Do Not Test Private Method Directly , fifo
+  -
+    #Phase 2 FIFO Strategy - pretty tests, Do Not Test Private Method Directly , fifo
     timeout: 100
     cbmcArguments:
       # Use the standard models library
@@ -72,13 +72,13 @@ phases:
       depth: false
       # never initialize reference-typed parameter to the entry point with null
       java-assume-inputs-non-null: true
-       # Maximum allowed length for an array passed as test input.
+      # Maximum allowed length for an array passed as test input.
       max-nondet-array-length: 30
       # Add constraint that strings are printable
       max-nondet-string-length: 100
       # Explores the program tree breadth-first.
       paths: fifo
-       # Add constraint that strings are printable
+      # Add constraint that strings are printable
       string-printable: true
       # Make implicit runtime exceptions explicit.
       throw-runtime-exceptions: false
@@ -90,8 +90,8 @@ phases:
       cover-function-only: false
       # instrument the file as opposed to the function only
       cover-only: file
-   -
-  #Phase 3 Exceptions, Do Not Test Private Method Directly 
+  -
+    #Phase 3 Exceptions, Do Not Test Private Method Directly
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -115,7 +115,7 @@ phases:
       # instrument the file as opposed to the function only
       cover-only: file
   -
-  #Phase 4 Simple and Private Directly - Reflection
+    #Phase 4 Simple and Private Directly - Reflection
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
@@ -145,7 +145,7 @@ phases:
     timeout: 180
     cbmcArguments:
       # Use simple models containers first (ArrayList, HashMap, HashSet,...) will have a maximum size of one.
-       classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
+      classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
       # Set a limit on the number of instructions that can be generated as part of a test trace.
       depth: 3000
       # never initialize reference-typed parameter to the entry point with null
